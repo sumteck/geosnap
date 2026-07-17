@@ -1,22 +1,44 @@
 {
+  "id": "/",
   "name": "GeoSnap",
   "short_name": "GeoSnap",
   "description": "A smart photo editor with location tagging and background removal.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "background_color": "#1c1c1e",
   "theme_color": "#1c1c1e",
   "orientation": "portrait",
+  "lang": "ml",
+  "dir": "ltr",
+  "categories": ["photo", "utilities"],
   "icons": [
     {
       "src": "/logo192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/logo512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "ക്യാമറ തുറക്കൂ",
+      "short_name": "Camera",
+      "url": "/?action=camera",
+      "icons": [{ "src": "/logo192.png", "sizes": "192x192" }]
     }
   ]
 }
